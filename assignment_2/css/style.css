@@ -1,0 +1,16 @@
+header {
+  font-family: arial;
+}
+
+body {
+  background-color: #91eeff;
+}
+
+p {
+  font-family: sans-serif, serif, monospace;
+}
+
+img {
+  max-width: 150px;
+  border-style: dotted;
+}
