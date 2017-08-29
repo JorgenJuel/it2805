@@ -23,13 +23,18 @@ for (let i in numbers) {
 document.getElementById('title').innerHTML = 'Hello, JavaScript';
 
 /* Part 5 */
-function changeDisplay(){
+const changeDisplay = () => {
+  document.getElementById('magic').style.display = 'none';
 }
 
-function changeVisibility(){
+const changeVisibility = () => {
+  document.getElementById('magic').style.visibility = 'hidden';
+  document.getElementById('magic').style.display = 'block';
 }
 
-function reset(){
+const reset = () => {
+  document.getElementById('magic').style.visibility = 'visible';
+  document.getElementById('magic').style.display = 'block';
 }
 
 /* Part 6 */
@@ -46,3 +51,10 @@ const technologies = [
   'Bootstrap',
   'Node.js'
 ];
+
+for (let i in technologies) {
+  const node = document.createElement('li');
+  const textNode = document.createTextNode(technologies[i]);
+  node.appendChild(textNode);
+  document.getElementById('tech').appendChild(node);
+}
