@@ -1,0 +1,4 @@
+1: Because the developers for the browser on phones has disabled this feature, because of network usage on 4G
+2: Hide the logo
+3: Only need to develop "one" place. If there is separate sites and you need to change something, you must remember to change both places
+Browsers change, and your algorithm need to change for checking to use mobile or not.
