@@ -1,0 +1,4 @@
+1: position: fixed; means the element will stay in the same place, even if its scrolled. Like it is pasted on the screen
+position: absolute; means the element will stay in the same place on the document. Like it is pasted on the document
+
+2: element element:nth-child(3) {}
