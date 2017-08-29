@@ -1,13 +1,26 @@
 /* Part 2 */
 console.log('PART 2')
-
+for (let i = 1; i < 21; i++) {
+  console.log(i)
+}
 
 /* Part 3 */
 console.log('PART 3')
-
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+for (let i in numbers) {
+  if (numbers[i] % 3 === 0) {
+    console.log('eple');
+  }
+  else if (numbers[i] % 5 === 0) {
+    console.log('kake');
+  }
+  else {
+    console.log(numbers[i]);
+  }
+}
 
 /* Part 4 */
+document.getElementById('title').innerHTML = 'Hello, JavaScript';
 
 /* Part 5 */
 function changeDisplay(){
