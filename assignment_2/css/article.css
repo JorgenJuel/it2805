@@ -1,10 +1,20 @@
+body {
+  background-color: #e5e5e5;
+}
+
 article {
-    width: 960px;
+    max-width: 75ch;
+    min-width: 65ch;
     margin: auto;
+    font-family: verdana, georgia;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #8e8e8e;
 }
 
 h1 {
     font-size: 3em;
+    margin-bottom: auto;
 }
 
 h2 {
@@ -27,4 +37,8 @@ p, blockquote, ul, ol {
     list-style-image: url('../img/cup-icon.svg');
     line-height: 1.5em;
     padding-left: 1.5em;
+}
+
+#cover {
+  width: 100%;
 }
