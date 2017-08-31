@@ -6,16 +6,20 @@
   </head>
   <body>
     <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
-      Real name: <input type="text" name="name" required><br>
+      Real name: <input type="text" name="name" placeholder="Peter Parker" required><br>
       Gender: <input type="radio" name="gender" value="male" required> Male <input type="radio" name="gender" value="female"> Female<br>
-      E-mail: <input type="email" name="email" required><br>
+      E-mail: <input type="email" name="email" placeholder="spinning@web.com" required><br>
       Birthdate: <input type="date" name="birthdate" min="1900-01-01" max="2013-01-01" required><br>
-      Hero name: <input type="text" name="hero" required><br>
+      Hero name: <input type="text" name="hero" placeholder="Spider-Man" required><br>
       Do you wear spandex?: <input type="radio" name="spandex" value="yes" required> Yes <input type="radio" name="spandex" value="no"> No<br>
-      Strength?: <input type="number" name="strength" min="1" max="10" onkeydown="return false" required><br>
-      Speed: <input type="number" name="speed" min="1" max="10" onkeydown="return false" required><br>
-      Intelligence: <input type="number" name="intelligence" min="1" max="10" onkeydown="return false" required><br>
+      Strength?: <input type="number" name="strength" min="1" max="10" onkeydown="return false" placeholder="1" required><br>
+      Speed: <input type="number" name="speed" min="1" max="10" onkeydown="return false" placeholder="1" required><br>
+      Intelligence: <input type="number" name="intelligence" min="1" max="10" onkeydown="return false" placeholder="1" required><br>
+      Income: <input id="income" type="number" name="income" min="0" placeholder="123 000" required><br>
+      Wealth: <input id="wealth" type="number" name="wealth" min="0" placeholder="21 000" required><br>
+      Tax: <input id="tax" type="number" name="tax" placeholder="44 790" readonly><br>
       <input type="submit" value="Submit tax form">
     </form>
+    <script src="./script.js"></script>
   </body>
 </html>
