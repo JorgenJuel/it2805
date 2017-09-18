@@ -1,4 +1,6 @@
-function addTask() {
+let tasks = {};
+
+const addTask = () => {
   const button = document.getElementById('addButton');
   const list = document.getElementById('outputField');
   const input = document.getElementById('inputField');
@@ -9,10 +11,13 @@ function addTask() {
   label.setAttribute('class', 'strikethrough')
   label.appendChild(t);
   const br = document.createElement('br');
+  const oldDate = new Date(1970, 1, 1, 0, 0, 0);
+  const nowDate = new Date();
+  const dateDiff = nowDate.getTime() - oldDate.getTime();
+  tasks[dateDiff] = input.value;
   list.appendChild(checkbox);
   list.appendChild(label);
   list.appendChild(br)
   input.value = '';
+  console.log(tasks);
 };
-
-let tasks = {};
